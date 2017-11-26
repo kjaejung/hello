@@ -14,7 +14,10 @@ struct A {
 };
 struct B : virtual A {
   B(): A(2) {}
-  virtual void Hello() { std::cout << "Hello from B" << std::endl; }
+  virtual void Hello() { 
+  std::cout << "Hello from B" << std::endl; 
+  std::cout << "Edit 2" << std::endl; 
+  }
 };
 struct C : virtual B {
   C(): A(3) {}
